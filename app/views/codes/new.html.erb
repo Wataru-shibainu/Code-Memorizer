@@ -1,0 +1,19 @@
+<h1>新規コード・コマンド登録</h1>
+<%= form_with model: @code do |f| %>
+  <table>
+    <tr>
+      <th><%= f.label :code ,"コード、コマンド" %></th>
+      <td><%= f.text_field :code %></td>
+    </tr>
+    <tr>
+      <th><%= f.label :description ,"コード、コマンドの説明" %></th>
+      <td><%= f.text_field :description %></td>
+    </tr>
+  </table>
+  <div>
+    <ul>
+      <li><%= f.submit "登録完了する"%></li>
+      <li><%= link_to "コード、コマンド一覧に戻る", :codes %></li>
+    </ul>
+  </div>
+<% end %>

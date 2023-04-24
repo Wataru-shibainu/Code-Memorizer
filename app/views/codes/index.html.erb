@@ -1,0 +1,6 @@
+<h1>登録コード・コマンド一覧</h1>
+<% @codes.each do |code| %>
+  <p><%= code.id %></p>
+  <p><%= code.description %></p>
+<% end %>
+<%= link_to "新規登録へ", :new_code %>
